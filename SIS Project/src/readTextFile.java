@@ -6,4 +6,5 @@ public class readTextFile
 	{
 		String fileName = "StudentInfo.txt";
 		Scanner fileReader = new Scanner(new File("StudentInfo.txt"));
+		// need to complete reading text file.
 	}
