@@ -8,14 +8,16 @@ public class readTextFile
 		
 		public static void readTextFile() throws IOException
 		{
+			ArrayList<String> students = new ArrayList<String>();
 			String fileName = "StudentInfo.txt";
 			Scanner fileReader = new Scanner(new File("StudentInfo.txt"));
 			while (fileReader.hasNextLine()) 
 			{
 				String data = fileReader.nextLine();
 				String[] dataSplit = data.split(" ");
+				
 			}
-			ArrayList<String> students = new ArrayList<String>();
+			
 			
 			
 			
