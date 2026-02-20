@@ -15,9 +15,9 @@ public class readTextFile
 			{
 				String data = fileReader.nextLine();
 				String[] dataSplit = data.split(" ");
-				
+				students.firstName.get(0) = dataSplit[0];
 			}
-			
+		
 			
 			
 			
