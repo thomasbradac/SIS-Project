@@ -35,7 +35,7 @@ public class readTextFile
 		
 		public static void fillArrayList()
 		{
-			students.add(new Student(dataSplit[0], dataSplit[1] , Integer.parseInt(dataSplit[2]) , dataSplit[3] , dataSplit[4] , dataSplit[5] , dataSplit[6] , dataSplit[7] , dataSplit[8]));
+			//students.add(new Student(dataSplit[0], dataSplit[1] , Integer.parseInt(dataSplit[2]) , dataSplit[3] , dataSplit[4] , dataSplit[5] , dataSplit[6] , dataSplit[7] , dataSplit[8]));
 		}
 		
 	}
