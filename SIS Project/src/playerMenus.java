@@ -28,6 +28,7 @@ public class playerMenus
 	        	 System.out.println("1. Sort by last name");
 	        	 System.out.println("2. Sort by GPA");
 	        	 System.out.println("3. Sort by period");
+	        	 // link to other classes?
 	         }
 		 
 		 }
