@@ -5,8 +5,63 @@ public class SISRunner
 
 		public static void main(String[] args) throws IOException
 			{
-				readTextFile.readTextFile();
-				System.out.println(readTextFile.students.get(5).getGPA());
+				switch (playerMenus.Menus())
+				{
+					// add student
+					case 1: 
+							{
+								StudentOperations.addStudent();
+								break;
+							}
+					//delete student	
+					case 2: 
+							{
+								StudentOperations.removeStudent();
+								break;
+							}	 
+					// change grades
+					case 3: 
+							{
+								
+								break;
+							}
+					// change schedule
+					case 4: 
+							{
+								
+								break;
+							}
+					// sort last name		
+					case 5: 
+							{
+								Sorting.sortClassroom();
+								break;
+							}
+					// sort GPA	
+					case 6: 
+							{
+								Sorting.sortClassroom();
+								break;
+							}
+					// sort class period		
+					case 7: 
+							{
+								Sorting.sortClassroom();
+								break;
+							}
+					
+					default:
+				}
+				
+				
+				
+				
+				
+			
+				
+				
+				
+
 			}
 
 	

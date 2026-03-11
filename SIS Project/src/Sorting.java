@@ -9,17 +9,17 @@ public class Sorting implements Comparator<Student> {
 	public int compare(Student s1, Student s2) {
 		int result = 0;
 		
-		if (playerMenus.Menus() == 1)
+		if (playerMenus.Menus() == 5)
 		{
-			result = s1.getFirstName().compareToIgnoreCase(s2.getFirstName());
+			result = s1.getLastName().compareToIgnoreCase(s2.getLastName());
 		}
 		
-		else if (playerMenus.Menus() == 2)
+		else if (playerMenus.Menus() == 6)
 		{
 			result = Double.compare(s2.getGPA(), s1.getGPA());
 		}
 		
-		else if (playerMenus.Menus() == 3)
+		else if (playerMenus.Menus() == 7)
 		{
 			result = s1.getClass1().compareToIgnoreCase(s2.getClass1());
 		}
