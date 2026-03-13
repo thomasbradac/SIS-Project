@@ -1,72 +1,54 @@
 import java.util.Scanner;
 import java.io.IOException;
+
 public class SISRunner
 	{
 
 		public static void main(String[] args) throws IOException
 			{
-				readTextFile.readTextFile();
-		
-				
-				StudentOperations.printStudents();
-				switch (playerMenus.Menus())
-				{
+				ReadTextFile.readTextFile();
+				StudentOperations.printWholeStudent();
+				int choice = PlayerMenus.Menus();
+				switch (choice)
+					{
 					// add student
-					case 1: 
-							{
-								StudentOperations.addStudent();
-								break;
-							}
-					//delete student	
-					case 2: 
-							{
-								StudentOperations.removeStudent();
-								break;
-							}	 
+					case 1:
+						{
+							StudentOperations.addStudent();
+							break;
+						}
+					// delete student
+					case 2:
+						{
+							StudentOperations.removeStudent();
+							break;
+						}
 					// change grades
-					case 3: 
-							{
-								ChangeClassroom.changeGrade(readTextFile.students);
-								break;
-							}
+					case 3:
+						{
+							ChangeClassroom.changeGrade(ReadTextFile.students);
+							break;
+						}
 					// change schedule
-					case 4: 
-							{
-								ChangeClassroom.changeSchedule(readTextFile.students);
-								break;
-							}
-					// sort last name		
-					case 5: 
-							{
-								Sorting.sortClassroom();
-								break;
-							}
-					// sort GPA	
-					case 6: 
-							{
-								Sorting.sortClassroom();
-								break;
-							}
-					// sort class period		
-					case 7: 
-							{
-								Sorting.sortClassroom();
-								break;
-							}
-					
+					case 4:
+						{
+							ChangeClassroom.changeSchedule(ReadTextFile.students);
+							break;
+						}
+					// sorting
+					case 5:
+					case 6:
+					case 7:
+					case 8:
+					case 9:
+						{
+							Sorting.sortClassroom(choice);
+							break;
+						}
+
 					default:
-				}
-				
-				
-				
-				
-				
-			
-				
-				
-				
+					}
 
 			}
 
-	
 	}

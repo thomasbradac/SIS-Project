@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.IOException;
 import java.util.Scanner;
 import java.util.ArrayList;
-public class readTextFile 
+public class ReadTextFile 
 	{
 		static ArrayList<Student> students = new ArrayList<Student>();	
 		
@@ -278,9 +278,9 @@ public class readTextFile
 				}
 				
 				double gpa = (gpa1 + gpa2 + gpa3)/(3);
+				double roundedGPA = Math.round(gpa * 100.0) / 100.0;
 				
-				
-				return gpa;
+				return roundedGPA;
 			}
 		
 		
